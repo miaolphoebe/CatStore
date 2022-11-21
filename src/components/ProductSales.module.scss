@@ -1,0 +1,54 @@
+@import "../styles/variables.scss";
+
+.top5Products{
+    height: 620px;
+    background: #fff;
+    border: 1px solid #dddfe5;
+    width: 100%;
+    max-width: 620px;
+    padding: 32px;
+    border-radius: 12px;
+    &.light__mode {
+        background: $white;
+        border: 1px solid $dividerLineLight;
+    }
+    &.dark__mode {
+        background: $lightBlack;
+        border: 1px solid $dividerLine;
+    }
+    &__header {
+        display: flex;
+
+
+        &__title {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: $letterSpacing;
+            line-height: 25px;
+        margin-bottom: 24px;
+            &.light__mode {
+                color: $black;
+            }
+
+            &.dark__mode {
+                color: $white;
+            }
+        }
+    }
+
+
+}
+.allproductsthumbnails {
+    width: 150px;
+    height: 150px
+}
+.inventorytable {
+   
+    position: relative;
+    height: 100vh;
+    overflow: auto;
+    z-index: 1;
+    overflow-x: hidden;
+    width: 100%;
+    padding:32px
+}
