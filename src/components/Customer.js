@@ -79,7 +79,7 @@ const Customer = () => {
       <div className={`${classes.dashboard__container} ${themeClass}`}>
         <div className={classes.dashboard}>
           <Header text="Customers" />
-          <div className={`${customerClasses.newCustomer}${themeClass}`}>
+          <div className={`${customerClasses.newCustomer}`}>
             <h2
               className={`${customerClasses.customerslist__header__title} ${themeClass}`}
             >

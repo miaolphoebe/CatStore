@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import UiContext from "../store/ui-context";
+import React from "react";
 import { connect } from "react-redux";
 import { getInventory, deleteInventory } from "../store/inventory";
 import CreateInventory from "./CreateInventory";
@@ -17,6 +16,7 @@ import EditIcon from "@material-ui/icons/Edit";
 import productSalesClasses from "./ProductSales.module.scss";
 import classes from "./Dashboard/Dashboard.module.scss";
 import Header from "./Dashboard/Header/Header";
+import Button from "@material-ui/core/Button";
 
 class Inventory extends React.Component {
   constructor() {
@@ -129,9 +129,15 @@ class Inventory extends React.Component {
                     )}
                   </TableBody>
                 </Table>{" "}
-                <button type="submit" onClick={this.isClicked}>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  type="submit"
+                  style={{ marginTop: "20px", marginBottom: "20px" }}
+                  onClick={this.isClicked}
+                >
                   Add Inventory
-                </button>
+                </Button>
                 {this.state.hasAddForm ? <CreateInventory /> : null}
               </TableContainer>
             </div>
