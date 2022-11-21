@@ -4,14 +4,6 @@ MeowMeow is a cat ecommerce admin platform. It is built entirely with React, and
 
 It was based off of the CodeFocus Channel's MeStore [code](https://github.com/CodeFocusChannel/mestore-chartjs).
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
 ### Design
 
 Line Chart, Doughnut Chart, Bar Chart, Polar Area Chart
@@ -31,3 +23,13 @@ I would recommend Charts.js, and Material UI for front-end web development.
 1. Make sure night mode will work for each page, and each chart
 2. Add setting feature
 3. Link all of dummy data to an API call
+
+## Development
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
